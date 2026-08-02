@@ -1,0 +1,85 @@
+\documentclass[12pt]{book}
+
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{titling}
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage{amsmath}
+
+\usepackage[
+    backend=biber,
+    style=verbose,
+    autocite=footnote
+]{biblatex}
+\addbibresource{references.bib}
+
+\geometry{
+    a4paper,
+    margin=1in
+}
+
+\begin{document}
+
+% -------------------------
+% Title Page
+% -------------------------
+
+\begin{titlepage}
+    \centering
+
+    \vspace*{2cm}
+
+    {\Huge\bfseries\textcolor{black}{Journey Glitchless Speedrun Bible}\par}
+
+    \vspace{1.5cm}
+
+    \includegraphics[width=0.75\textwidth]{figures/image1.jpg}
+
+    \vspace{1.5cm}
+
+    {\Large Written by\par}
+
+    \vspace{0.5cm}
+
+    {\LARGE\bfseries Charybdis2\par}
+
+    \vfill
+
+    {\large A complete guide to mastering the Journey glitchless speedrun\par}
+
+\end{titlepage}
+
+
+% -------------------------
+% Intentional blank page
+% -------------------------
+
+\thispagestyle{empty}
+\null
+\newpage
+
+
+% -------------------------
+% Contents Page 
+
+\tableofcontents
+
+
+
+
+% -------------------------
+% Main Content
+% -------------------------
+
+\input{sections/intro}
+
+\input{sections/scarf}
+
+
+
+
+\printbibliography
+
+\end{document}
