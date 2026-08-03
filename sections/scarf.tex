@@ -17,6 +17,7 @@ When I talk about \textbf{length} I mean the total capacity of your scarf at ful
     \item 1 Just costs 4 length, unless you are in whiterobe and your feet are touching the ground. In this case 1 jump costs 3.
     \item You cannot exceed a length of 30.
     \item Even if you only have 1 charge left, you can still jump.
+    \item If you have 0 scarf and you pick up a symbol that symbol will give 4+1 (5) or 4+2 (6) depending on your cycle
 \end{itemize}
 To deduce what legnth the next symbol will give, Go to chapter select and pick up 1 symbol, If you can jump 4 times
 from the ground after picking up the symbol the next symbol will give +1, If you cannot jump 4 times (I.E 3)
@@ -26,7 +27,7 @@ then the next symbol will give +2.
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{c|*{21}{c}}
 \hline
-& 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 \\
+\textbf{No. of Symbols} & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 \\
 \hline
 \textbf{Red Robe +1 symbol first} 
 & 4 & 5 & 7 & 8 & 10 & 11 & 13 & 14 & 16 & 17 & 19 & 20 & 22 & 23 & 25 & 26 & 28 & 29 & 30 & 30 & 30 \\
@@ -59,5 +60,23 @@ then the next symbol will give +2.
 \end{tabular}%
 }
 \caption{Amount of jumps with each length lookup table}
-\label{tab:symbols-robes}
+\label{tab:symbols-robes-jumps}
 \end{table}
+
+\subsection*{Losing Scarf}
+There are two ways to lose scarf. Getting hit by a War Machine or winds. The winds are a bit special and will be covered
+in the Mountain section.\\
+War Machines take half your scarf rounded down, so if you had 30, you will have 15, or if you had 3 you will have 0.
+War machines and the final wind are the only ways to get a total of 0 scarf.\\
+
+\subsection*{How many symbols should you take?}
+In All symbols and scarfless this is irrelivent as you either take none or all of them. In any\%, 
+however you need to weigh the benifits of collecting symbols with the time it takes to collect them.\\
+The current Any\% route collects 7 symbols (2 in chapter Select, 3 in Pink Desert, 1 in underground and 1 in tower)
+These symbols are mostly on the direct route you take (Sunken City and Underground being the best examples) 
+or are used in skips (Tower being the best example). The key difference with 7 compared to 8,9,10 or even 6 or below
+is the amount of jumps given and the total length. At 7 you gain 1 extra jump compared to 6 or below and you're
+21 in length. This will be explained in the Mountain section about winds why this is important, but the key point
+is the final death march winds take 5 length off, so at 21 you need 5 winds to completly remove your scarf.
+
+\newpage
